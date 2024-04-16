@@ -1,14 +1,11 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
-import App from './App.vue'
+import app from './app.vue';
 import router from './router'
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDnGHOhij3K3cgD9yuFzv4SaaWy63q0xr8",
   authDomain: "vuejs-file.firebaseapp.com",
@@ -21,6 +18,6 @@ const firebaseConfig = {
 // Initialize Firebase
 initializeApp(firebaseConfig);
 
-
-App.use(router)
-App.mount('#app')
+app.use(router)
+const app = createApp(app);
+app.mount('#app')

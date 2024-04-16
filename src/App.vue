@@ -1,6 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import router from './router';
 </script>
 
@@ -43,3 +41,4 @@ import router from './router';
     }
 
 </style>
+
