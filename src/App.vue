@@ -38,6 +38,7 @@ import router from './router';
   /* Style for active router link */
   nav a.router-link-exact-active {
     font-weight: bold;
+    color: rgb(173, 150, 150);
     }
 
 </style>
