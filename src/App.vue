@@ -4,42 +4,76 @@ import router from './router';
 
 <template>
   <nav>
-    |<router-link to="/">home</router-link> |
-    <router-link to="/feed">feed</router-link>|
-    <router-link to="/register">register</router-link>|
-    <router-link to="/SignIn">signinn</router-link>|
+    <router-link to="/home">home</router-link> 
+    <router-link to="/register">register</router-link>
+    <router-link to="/SignIn">sign in</router-link>
   </nav>
  <router-view/>
+
+ <footer>
+    <a style="color: #B9B8C1;">© Bjørnholt Skole 2024</a>
+   <router-link to="/tos1">Terms of Service</router-link>
+</footer>
+
+
 </template>
 
 <style>
-  /* Style for the navigation bar */
-  nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+nav {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    background-color: #EBF4FC;
+    padding: 10px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    justify-content: space-evenly;
+}
 
-  /* Style for the router links */
-  nav a {
-    color: #fff;
+nav a router-link {
+    color: #14112F;
     text-decoration: none;
-    font-size: 24px; /* Adjust font size as needed */
-    margin: 0 10px; /* Add margin to create spacing between links */
-  }
+    padding: 8px 16px;
+ 
+}
 
-  /* Style for active router link */
-  nav a.router-link-exact-active {
-    font-weight: bold;
-    color: rgb(173, 150, 150);
+nav a:hover {
+    background-color: #b6ddff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        padding: 8px;
+        margin: 0 2px;
     }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2D2B8E;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}
+
+footer a {
+    color: #B9B8C1;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 </style>
+
 
