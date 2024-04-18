@@ -37,7 +37,7 @@
  export default {
     methods: {
       acceptTerms() {
-        this.$router.push('/home');
+        this.$router.push('/');
         console.log("Terms of service accepted!");
       },
     },

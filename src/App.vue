@@ -4,9 +4,7 @@ import router from './router';
 
 <template>
   <nav>
-    <router-link to="/home">home</router-link> 
-    <router-link to="/register">register</router-link>
-    <router-link to="/SignIn">sign in</router-link>
+  
   </nav>
  <router-view/>
 

@@ -1,91 +1,69 @@
 <template>
-  <div class="navbar">
-    <button class="menu-button" @click="toggleMenu">Menu</button>
-    <ul class="nav-list" :class="{ 'active': isMenuOpen }">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-      <li class="social-buttons">
-        <button class="social-button">Facebook</button>
-        <button class="social-button">Twitter</button>
-      </li>
-    </ul>
-  </div>
+<nav>
+  <router-link to="/">home</router-link> 
+    <router-link to="/register">register</router-link>
+    <router-link to="/SignIn">sign in</router-link> 
+</nav>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isMenuOpen: false
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    }
-  }
-};
-</script>
 
-<style>
-.navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-}
+<style>  
 
-.menu-button {
-  display: none;
-}
-
-.nav-list {
-  list-style-type: none;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #EBF4FC;
+  padding: 10px;
+  text-align: center;
   display: flex;
-  justify-content: flex-start; /* Align links to the left */
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.nav-list.active {
+nav a router-link {
+  color: #14112F;
+  text-decoration: none;
+  padding: 8px 16px;
+
+}
+
+nav a:hover {
+  background-color: #b6ddff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+      padding: 8px;
+      margin: 0 2px;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2D2B8E;
+  padding: 10px;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 180px;
 }
 
-.nav-list li {
-  margin-right: 20px;
+footer a {
+  color: #B9B8C1;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.nav-list li:last-child {
-  margin-right: 0;
+footer a:hover {
+  text-decoration: underline;
 }
 
-.social-buttons {
-  margin-left: auto; /* Push social buttons to the right */
-  margin-top: 10px;
-}
 
-.social-button {
-  background-color: #3b5998;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-button {
-    display: block;
-  }
-
-  .nav-list {
-    display: none;
-  }
-
-  .nav-list.active {
-    display: flex;
-    flex-direction: column;
-  }
-}
 </style>
+
+
