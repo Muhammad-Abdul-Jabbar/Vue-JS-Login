@@ -10,9 +10,10 @@
         <p>
             <button @click="register">Submit</button>
         </p>
+        <p v-if="errMsg">{{ errMsg }}</p>
         <p class="link">
             <a @click="forgotPassword">Forgot Password?</a>
-            <router-link to="/register">tap her to register</router-link>
+            <router-link to="/">tap her to register</router-link>
         </p>
         <button @click="signInWithGoogle" class="btn">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiP6GLDtl-IRAenBqGeQMcJZWcJq2cgb2DpuEQOvplPA&s" class="google-logo">
@@ -32,6 +33,7 @@ import { useRouter } from 'vue-router';
 const email = ref("");
 const password = ref("");
 const router = useRouter();
+const errMsg = ref();
 
 const register = () => {
     signInWithEmailAndPassword(getAuth(), email.value, password.value)
@@ -42,6 +44,7 @@ const register = () => {
         .catch((error) => {
             console.log(error.code)
             alert(error.message)
+          
         })
 };
 
@@ -54,7 +57,7 @@ const signInWithGoogle = () => {
         })
         .catch((error) => {
             console.log(error.code)
-            alert(error.message)
+            alert(error.message) 
         })
 };
 

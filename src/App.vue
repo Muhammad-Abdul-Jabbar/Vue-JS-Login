@@ -1,5 +1,6 @@
 <script setup>
 import router from './router';
+
 </script>
 
 <template>
@@ -38,7 +39,7 @@ nav a router-link {
 }
 
 nav a:hover {
-    background-color: #b6ddff;
+  
     text-decoration: none;
 }
 
