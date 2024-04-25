@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-motion-pop-visible >
         <h1 style="text-align: center;">Welcome Back</h1>
         <p>
             <input type="text" placeholder="Email" v-model="email">
@@ -10,12 +10,11 @@
         <p>
             <button @click="register">Submit</button>
         </p>
-        <p v-if="errMsg">{{ errMsg }}</p>
         <p class="link">
-            <a @click="forgotPassword">Forgot Password?</a>
-            <router-link to="/">tap her to register</router-link>
+            <a @click="forgotPassword" v-motion-slide-left>Forgot Password?</a> 
+            <router-link to="/" v-motion-slide-right>tap her to register</router-link>
         </p>
-        <button @click="signInWithGoogle" class="btn">
+        <button @click="signInWithGoogle" class="btn"  v-motion-slide-top> 
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiP6GLDtl-IRAenBqGeQMcJZWcJq2cgb2DpuEQOvplPA&s" class="google-logo">
         Sign In With Google
        </button>
@@ -26,7 +25,7 @@
 <script setup>
 import { ref } from 'vue';
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail,
- GoogleAuthProvider, signInWithPopup, GithubAuthProvider
+ GoogleAuthProvider, signInWithPopup
 } from "firebase/auth"
 import { useRouter } from 'vue-router';
 

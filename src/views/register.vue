@@ -1,16 +1,19 @@
 
 <template>
-    <h1 style="text-align: center;">create an Account</h1>
+<div v-motion-pop-visible >
+    <h1 style="text-align: center;" >create an Account</h1>
     <p><input type="text" placeholder="email" v-model="email"></p>
     <p><input type="password" placeholder="password" v-model="password"></p>
     <p><button @click="register">submit</button></p>
     <p class="link">
-            <router-link to="/SignIn">tap her to sign in</router-link>
+            <router-link to="/SignIn" v-motion-slide-left>tap her to sign in</router-link>
         </p>
-    <button @click="signInWithGoogle" class="btn">
+    <button @click="signInWithGoogle" class="btn" v v-motion-slide-top>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiP6GLDtl-IRAenBqGeQMcJZWcJq2cgb2DpuEQOvplPA&s" class="google-logo">
         Sign In With Google
     </button>
+</div>
+   
  </template>
  
  <script setup>
@@ -18,7 +21,7 @@
  import { getAuth , createUserWithEmailAndPassword,
      GoogleAuthProvider, signInWithPopup} from "firebase/auth"
  import { useRouter } from 'vue-router';
- const email = ref("");
+ const email = ref(""); 
  const password = ref("");
  const router = useRouter();
  const register = () =>{

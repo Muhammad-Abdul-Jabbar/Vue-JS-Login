@@ -9,7 +9,8 @@ const router = createRouter({
     { path: "/TOS", component: () => import("../views/TOS.vue") },
     { path: "/tos1", component: () => import("../views/tos1.vue") },
     { path: "/abdu", component: () => import("../views/abdu.vue") },
-    { path: "/mo", component: () => import("../views/mo.vue") }
+    { path: "/mo", component: () => import("../views/mo.vue") },
+    { path: "/game/:slug", component: () => import("../views/game.vue") }
   ]
 });
 

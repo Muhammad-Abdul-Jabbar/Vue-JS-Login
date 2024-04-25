@@ -18,18 +18,6 @@ import router from './router';
 </template>
 
 <style>
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #EBF4FC;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-}
 
 nav a router-link {
     color: #14112F;
@@ -50,7 +38,7 @@ nav a:hover {
     }
 }
 footer {
-    position: fixed;
+  
     bottom: 0;
     left: 0;
     width: 100%;
