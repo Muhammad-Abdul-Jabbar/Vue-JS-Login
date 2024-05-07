@@ -17,14 +17,18 @@
  </template>
  
  <script setup>
+
  import { ref } from 'vue';
  import { getAuth , createUserWithEmailAndPassword,
      GoogleAuthProvider, signInWithPopup} from "firebase/auth"
  import { useRouter } from 'vue-router';
+
  const email = ref(""); 
  const password = ref("");
  const router = useRouter();
+
  const register = () =>{
+    
      createUserWithEmailAndPassword(getAuth(), email.value, password.value)
        .then((data)  => {
        console.log("sucsessfully registerd!")
@@ -55,7 +59,12 @@
  </script>
  
 
+ 
  <style>
+ footer{
+    position: fixed;
+ }
+
  body {
      font-family: Arial, sans-serif;
      background-color: #f4f4f4;
@@ -154,5 +163,9 @@
    margin-right: 10px;
  }
  
+ footer {
+   position: fixed;
+}
+
  </style>
  

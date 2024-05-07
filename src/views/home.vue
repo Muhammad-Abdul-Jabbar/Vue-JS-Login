@@ -26,13 +26,12 @@
             <h1>BEST GAMES</h1>
             <br>
             <div class="section-1-img" style="gap: 15px;">
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://github.com/Almarex-Web-Dev/my-gaming-website/blob/master/images/coldwar.png?raw=true);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://www.elkjop.no/image/dv_web_D1800010021789656/751018/house-flipper-2-ps5--pdp_main-640.jpg);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://www.elkjop.no/image/dv_web_D1800010021833362/772074/wrath-aeon-of-ruin-ps4--pdp_main-640.jpg);"</div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://www.elkjop.no/image/dv_web_D1800010021814915/759854/elden-ring-shadow-of-the-erdtree-edition-ps5--pdp_main-640.jpg);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://www.elkjop.no/image/dv_web_D1800010021661035/655973/skull-island-rise-of-kong-ps5--pdp_main-640.jpg);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://www.elkjop.no/image/dv_web_D1800010021002761/460119/gotham-knights-special-edition-ps5--pdp_main-640.jpg);"</div></RouterLink>
             </div>
   </div>
 
@@ -41,11 +40,11 @@
             <br>
             <div class="section-1-img" style="gap: 15px;">
               <RouterLink to="/mo"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
-              <RouterLink to="/abdu"><div class="img img-1"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://github.com/Almarex-Web-Dev/my-gaming-website/blob/master/images/battlefield.jpg?raw=true);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://github.com/Almarex-Web-Dev/my-gaming-website/blob/master/images/jumanji.jpg?raw=true);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://github.com/Almarex-Web-Dev/my-gaming-website/blob/master/images/incrdible.png?raw=true);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://github.com/Almarex-Web-Dev/my-gaming-website/blob/master/images/nba.jpg?raw=true);"></div></RouterLink>
+              <RouterLink to="/abdu"><div class="img img-1" style="background-image: url(https://github.com/Almarex-Web-Dev/my-gaming-website/blob/master/images/spider.png?raw=true);"></div></RouterLink>
               
             </div>
   </div>
